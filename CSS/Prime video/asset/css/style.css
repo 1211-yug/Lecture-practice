@@ -9,7 +9,7 @@
 body{
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', sans-serif;
     line-height: 1.6;
-    background-color: rgb(9, 8, 8);
+    background-color: #000000;
 }
 
 .containar{
@@ -26,14 +26,14 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 0px 21px;
+    position: fixed;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    background-color: #16181bb3;
+    background-color: #121010de;
 }
 
-.logo{
-    font-size: 18px;
-    font-weight: bolder;
+.logo img{
+    width: 90px;
 }
 
 .nav ul li{
@@ -81,8 +81,9 @@ a{
     position: absolute;
     top: 39px;
     right: 0;
-    background: rgba(50, 47, 47, 0.75);
-    width: 660px;
+    background: #272727f6;
+    cursor: pointer;
+    width: 500px;
     border-radius: 10px;
     margin-block: 14px;
     padding: 20px;
@@ -108,7 +109,8 @@ a{
     position: absolute;
     top: 50px;
     right: 10;
-    background: rgba(50, 47, 47, 0.75);
+    background: #272727f6;
+    cursor: pointer;
     width: 166px;
     border-radius: 10px;
     margin-block: 14px;
@@ -131,12 +133,18 @@ a{
     display: none;
     position: absolute;
     top: 57px;
-    right: 0;
-    background: rgba(50, 47, 47, 0.75);
-    width: 482px;
+    right: -122px;
+    background: #272727f6;
+    cursor: pointer;
+    width: 710px;
     border-radius: 10px;
     padding: 28px 55px 12px 26px;
-    gap: 40px;
+    gap: 30px;
+}
+
+.block li{
+    width: 157px;
+    height: 40px;
 }
 
 .menu:hover .menu-dropdown{
@@ -172,8 +180,104 @@ a{
     border: none;
     padding: 10px 15px;
     background: transparent;
+    cursor: pointer;
 }
 
 .h-btn:hover{
     background-color: #57b3ff;
+    box-shadow: 0px 1px 11px 1px rgb(154, 214, 238);;
+}
+
+.main-container{
+    position: static;
+    margin-left: 80px;
+    margin-top: 65px;
+}
+
+.right-img img{
+    width: 880px;
+    height: 675px;
+    float: right;
+}
+
+.sign-title{
+    color: white;
+    width: 935px;
+    height: 675px;
+    padding-block: 80px;
+    background: #000000;
+}
+
+.sign-title h1{
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-family: "Roboto", sans-serif;
+}
+
+.sign-title p{
+    font-size: 20px;
+    margin-bottom: 45px;
+    font-family: "Roboto", sans-serif;
+}
+
+.sign-btn{
+    width: 230px;
+    height: 62px;
+    background-color: white;
+    border-radius: 10px;
+    transition: transform 1s;
+}
+
+.sign-btn button{
+    background: transparent;
+    padding: 17px 15px;
+    border: none;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+    cursor: pointer;
+}
+
+.sign-btn:hover{
+    color: rgb(58, 57, 57);
+    background-color: #F1F1F1;
+    border-radius: 10px;
+    transform: scale(1.2);
+}
+
+.main-container2{
+    position: static;
+    margin-left: 80px;
+    margin-top: 0px;
+}
+
+.right-img2 img{
+    width: 920px;
+    height: 675px;
+    float: right;
+}
+
+.sign-btn2{
+    width: 130px;
+    height: 62px;
+    background-color: white;
+    border-radius: 10px;
+    transition: transform 1s;
+}
+
+.sign-btn2 button{
+    background: transparent;
+    padding: 16px 18px;
+    border: none;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+    cursor: pointer;
+}
+
+.sign-btn2:hover{
+    color: rgb(58, 57, 57);
+    background-color: #F1F1F1;
+    border-radius: 10px;
+    transform: scale(1.2);
 }
