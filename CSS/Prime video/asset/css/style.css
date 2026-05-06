@@ -29,7 +29,7 @@ body{
     position: fixed;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    background-color: #121010de;
+    background-color:#141414d4;
 }
 
 .logo img{
@@ -280,4 +280,65 @@ a{
     background-color: #F1F1F1;
     border-radius: 10px;
     transform: scale(1.2);
+}
+
+.main-container3{
+    position: static;
+    width: 100%;
+    padding: 50px;
+    background-color: #00050D;
+}
+
+.fav_subs{
+    display: grid;
+    float: right;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.fav_subs img{
+    width: 300px;
+    height: 200px;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+.fav_subs img:hover{
+    box-shadow: 1px 2px 11px -3px rgb(238, 243, 245);
+}
+
+.sign-title3{
+    color: white;
+    width: 935px;
+    height: 593px;
+    padding-block: 0px;
+}
+
+.sign-title3 p{
+    font-size: 20px;
+    margin-top: 40px;
+    font-family: "Roboto", sans-serif;
+}
+
+.f-container{
+    padding-block: 24px;
+    background-color: #222222;
+    text-align: center;
+}
+
+.f-logo img{
+    width: 105px;
+}
+.f-link{
+    margin-bottom: 7px;
+}
+
+.f-link a{
+    color: #48b3f5;
+    font-size: 14px;
+    margin-right: 20px;
+}
+
+.f-copyright{
+    color: #5988A5;
+    font-size: 14px;
 }
