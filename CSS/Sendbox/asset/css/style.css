@@ -5,3 +5,55 @@
     padding: 0;
     margin: 0;
 }
+
+.container{
+    width: calc(100% - 30%);
+    margin: 0 auto;
+}
+
+a{
+    color: #000;
+    text-decoration: none;
+}
+
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Manrope", sans-serif;
+    padding-block: 20px;
+}
+
+.nav-list{
+    display: flex;
+    gap: 30px;
+    font-size: 17px;
+}
+
+.nav-list i{
+    color: #54A8C7;
+}
+
+li{
+    list-style: none;
+}
+
+.header-right{
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+}
+
+.search{
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.btn-sign-in{
+    padding: 10px 20px;
+    background-color: #54A8C7;
+    color: #fff;
+    border: none;
+    font-size: 17px;
+    border-radius: 20px;
+}
