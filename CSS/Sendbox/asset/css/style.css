@@ -17,9 +17,10 @@ body{
 }
 
 .container{
-    max-width: calc(100% - 30%);
-    position: relative;
+    max-width: 1320px;
+    width: 100%;
     margin-inline: auto;
+    padding-inline: 20px;
 }
 
 .nav-bar{
@@ -38,7 +39,7 @@ ul li a:hover{
 }
 
 .nav-links{
-    display: none;
+    display: flex;
     align-items: var(--align-center);
     gap: 40px;
     padding-block: 25px;
@@ -302,6 +303,7 @@ a{
 }
 
 .mobile-menu{
+    display: none;
     margin: auto 0px;
 }
 
@@ -335,7 +337,7 @@ a{
 }
 
 .hero-text p{
-    font-size: calc(3vw - 35px);
+    font-size: calc(3vw - 36px);
     font-weight: 500;
     color: #60697b;
     line-height: 38px;
@@ -484,15 +486,178 @@ a{
     width: 100%;
 }
 
-/* we Sections */
+/* Who Are We Sections */
+.we-section{
+    width: 100%;
+    padding: calc(60px + 2vw) 0px;
+}
 
 .we-content{
-    width: auto;
+    max-width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    align-items: center;
+    gap: 70px;
+}
+
+.we-image{
+    position: relative;
+}
+
+.shape{
+    width: calc(120px + 5vw);
+    height: calc(120px + 5vw);
+    background-color: #edf5f7;
+    border-radius: 50%;
+    position: absolute;
+    top: -70px;
+    left: -80px;
+    z-index: -1;
 }
 
 .we-image img{
+    width: calc(100% + 0%);
+    display: block;
     border-radius: 15px;
+}
+
+.we-text h2{
+    font-family: "DM Serif Display", serif;
+    font-size: calc(22px + 1vw);
+    font-weight: 500;
+    color: #343f52;
+}
+
+.we-text h5{
+    font-size: calc(16px + 0.3vw);
+    color: #60697b;
+    line-height: 1.7;
+    margin-bottom: calc(13px + 0.5vw);
+    font-weight: 500;
+}
+
+.we-text p{
+    font-size: calc(13px + 0.2vw);
+    color: #60697b;
+    line-height: 1.8;
+    margin-bottom: calc(25px + 1vw);
+}
+
+.we-grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: calc(20px + 1vw);
+}
+
+.we-grid-content{
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
+}
+
+.we-icon{
+    min-width: calc(45px + 0.5vw);
+    height: calc(45px + 0.5vw);
+    background-color: #edf5f7;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.we-icon i{
+    font-size: calc(16px + 0.2vw);
+    color: #54a8c7;
+}
+
+.we-grid-content h3{
+    font-size: calc(1rem + 0.2vw);
+    color: #343f52;
+    margin-bottom: 10px;
+}
+
+.we-grid-content p{
+    font-size: calc(7px + 0.5vw);
+    margin-bottom: 0;
+    line-height: 1.7;
+}
+
+.shape2{
+    width: calc(120px + 5vw);
+    height: calc(120px + 5vw);
+    background-color: #edf5f7;
+    border-radius: 50%;
+    position: absolute;
+    top: -70px;
+    right: -80px;
+    z-index: -1;
+}
+
+/* Testimonial Section */ 
+
+.testimonial-section{
+    width: 100%;
+    padding: 100px 0px;
+}
+
+.testimonial-content{
+    max-width: 100%;
+    background-color: #edf5f7;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    overflow: hidden;
+}
+
+.testimonial-image{
+    text-align: center;
+}
+
+.testimonial-image img{
+    width: 340px;
+    display: block;
+    margin: auto;
+}
+
+.testimonial-text{
+    text-align: center;
+    padding: 60px;
+}
+
+.stars{
+    margin: 20px 180px;
+}
+
+.stars i{
+    color: #f6b100;
+    font-size: 18px;
+    margin-right: 3px;
+}
+
+.testimonial-text p{
+    font-size: calc(100% + 4px);
+    color: #60697b;
+    margin-bottom: 30px;
+}
+
+.testimonial-text h3{
+    color: #343f52;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.testimonial-text span{
+    color: #8c97a5;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.team-work{
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    align-items: center;
+    gap: 40px;
+    margin-block: 100px 100px;
 }
