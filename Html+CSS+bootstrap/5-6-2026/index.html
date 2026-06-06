@@ -8,14 +8,16 @@
 
   <title>Example</title>
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <!-- Bootstrap cdn -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
 </head>
 
-<body>
+<body class="bg-dark text-white">
 
   <!-- Header -->
-  <div class="row header bg-dark text-white p-3 m-0 align-items-center">
+  <div class="row header bg-dark text-white p-3 m-0 align-items-center fixed-top">
     <div class="col-1 logo">
       <h2>Carousel</h2>
     </div>
@@ -99,30 +101,27 @@
     <div class="container">
       <div class="Card my-5">
         <div class="row">
-          <div class="card col p-0" style="width: 18rem;">
+          <div class="card col p-0 bg-dark text-white border-white" style="width: 18rem;">
             <img src="./pexels-abdelghani-sad-djaballah-2157717807-35413462.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Town</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s
-                content.</p>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
               <a href="#" class="btn btn-primary">Go somewhere</a>
             </div>
           </div>
-          <div class="card col p-0" style="width: 18rem;">
+          <div class="card col p-0 bg-dark text-white border-white" style="width: 18rem;">
             <img src="./pexels-justyna-sieczka-2161487384-37569480.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Italy</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s
-                content.</p>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
               <a href="#" class="btn btn-primary">Go somewhere</a>
             </div>
           </div>
-          <div class="card col p-0" style="width: 18rem;">
+          <div class="card col p-0 bg-dark text-white border-white" style="width: 18rem;">
             <img src="./pexels-oskar-lekki-2161835424-37771382.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Nature</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s
-                content.</p>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
               <a href="#" class="btn btn-primary">Go somewhere</a>
             </div>
           </div>
@@ -135,12 +134,62 @@
   <!-- Section -->
   <section>
     <div class="container">
-      <div>
-
+      <div class="row my-5 py-5">
+        <div class="col-7 d-flex align-items-center">
+          <div>
+            <h1>Mercedes-Benz CLA Electric</h1>
+            <p class="text-secondary fs-5">𝗘𝗹𝗲𝗰𝘁𝗿𝗶𝗰 𝗖𝗮𝗿𝘀 𝗶𝗻 𝗜𝗻𝗱𝗶𝗮 (June 2026), Best EV Car Prices | Super Car | Autocar India</p>
+          </div>
+        </div>
+        <div class="col-5">
+          <img src="./bg-1.jpg" alt="bg-1" width="500" height="350">
+        </div>
       </div>
+      <hr>
+      <div class="row my-5 py-5">
+        <div class="col-5">
+          <img src="./bg-2.jpg" alt="bg-1" width="500" height="350">
+        </div>
+        <div class="col-7 d-flex align-items-center">
+          <div>
+            <h1>Desktop Wallpaper</h1>
+            <p class="text-secondary fs-5">Desktop Wallpaper Bachira Photos, Download The BEST Free</p>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="row my-5 py-5">
+        <div class="col-7 d-flex align-items-center">
+          <div>
+            <h1>Charming Town</h1>
+            <p class="text-secondary fs-5">Charming Old Town Street in Warsaw, Poland · Free Stock Photo</p>
+          </div>
+        </div>
+        <div class="col-5">
+          <img src="./bg-3.jpg" alt="bg-1" width="500" height="350">
+        </div>
+      </div>
+      <hr>
     </div>
   </section>
 
+  <!-- Footer -->
+  <footer>
+    <div class=" container">
+      <div class="row py-5 my-2">
+        <div class="col-11 d-flex">
+          <p class="px-2">&copy; 2017–2025 Company, Inc. </p>
+          <a class="px-2" href="#">Privacy</a>
+          <a class="px-2" href="#">Terms</a>
+        </div>
+        <div class="col-1">
+          <a href="#">Back to top</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap Script -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
     crossorigin="anonymous"></script>
