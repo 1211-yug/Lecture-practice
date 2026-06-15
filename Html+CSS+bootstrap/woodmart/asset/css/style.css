@@ -161,3 +161,9 @@
 .offer-item img {
     object-fit: contain;
 }
+
+.view-btn a:hover{
+    color: white !important;
+}
+
+/* Product card */
