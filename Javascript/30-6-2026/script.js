@@ -79,4 +79,24 @@ console.log(x ^ y);
 
 console.log("<<<<<<<<<< Spread and Rest Parameter >>>>>>>>>>");
 
+let subjects = ["Math", "Science", "English"]
+let Marks = [...subjects, 65, 60, 73]
 
+console.log(subjects);
+console.log(Marks);
+
+/* Operator Precedince Reminder */
+
+console.log("<<<<<<<<<< Operator Precedince Reminder >>>>>>>>>>");
+
+console.log(6 + 10 * 5);
+
+console.log(13 + 9 - 3);
+
+console.log(20 - 3 + 10);
+
+console.log(50 - 5 / 10);
+
+console.log(30 + 5 % 3);
+
+console.log(true || false && false);
