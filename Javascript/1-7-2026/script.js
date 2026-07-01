@@ -199,5 +199,35 @@ console.log("============");
 /* break, continue, return */
 console.log("<<<<<=== break, continue, return ===>>>>>");
 
+// break statement
+
+for (i = 1; i <= 12; i++) {
+    if (i == 8) {
+        break;
+    }
+    console.log(i);
+}
+
+console.log("============");
+console.log("============");
 
 
+//continue statement
+for (i = 1; i <= 5; i++) {
+    for (j = 1; j <= 4; j++) {
+        if (i == 3) {
+            continue;
+        }
+        console.log(j);
+    }
+    console.log("============");
+}
+
+// return statement
+function add(x, y) {
+    return x - y;
+}
+
+console.log(add(100, 30));
+
+console.log("============");
