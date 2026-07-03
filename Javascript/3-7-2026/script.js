@@ -53,3 +53,13 @@ const square = (oddEven(12));
 
 // 6.  IIFE (Immediately Invoked Function Expression)
 
+(function () {
+    console.log("App started");
+})();
+
+(() => {
+    console.log("App End");
+})();
+
+// 7. Callback Function
+
