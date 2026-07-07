@@ -17,11 +17,14 @@ console.log("Array length = ", array.length);
 
 console.log("=============================================");
 
+// concat()
+
 let app = ["Youtube", "Instagram", "Snapchat"];
 let ai = ["Chatgpt", "Gemini", "Claude"];
 let app_ai = app.concat(ai);
 
 console.log("App and Ai names =", app_ai);
+console.log("Array of length = ", app_ai.length);
 
 
 console.log("=============================================");
@@ -194,3 +197,6 @@ console.log("<<<=== 13. fill() ===>>>");
 
     console.log(arrs.fill(6, 1, 4));
 }
+
+console.log("=============================================");
+
