@@ -175,9 +175,9 @@ console.log("=================================");
 console.log("======= 1. slice() =======");
 
 {
-    let colors = ["Red", "Blue", "Green", "Yellow", "Black"];
+    let colors = "Red, Blue, Green, Yellow, Black";
 
-    console.log(colors.slice(1, 4));
+    console.log(colors.slice(0, 16));
 }
 
 
@@ -186,8 +186,8 @@ console.log("======= 1. slice() =======");
 console.log("======= 2. concat() =======");
 
 {
-    let students = ["Yug", "Prince", "Mayur"];
-    let teachers = ["Sir", "Sir", "Sir"];
+    let students = "Yug, Prince, Mayur ";
+    let teachers = "Sir";
 
     console.log(students.concat(teachers));
 
@@ -198,9 +198,9 @@ console.log("======= 2. concat() =======");
 console.log("======= 3. at() =======");
 
 {
-    let citis = ["Surat", "Rajkot", "Ahmedabad", "vadodara"];
+    let citis = "Surat Rajkot Ahmedabad vadodara";
 
-    console.log(citis.at());
+    console.log(citis.at(15));
 
 }
 
@@ -230,7 +230,7 @@ console.log("======= 5. startsWith() =======");
 console.log("======= 6. includes() =======");
 
 {
-    let car = ["Thar", "BMW", "Audi"];
+    let car = "Thar BMW Audi";
 
     console.log(car.includes("Audi"));
 
@@ -241,7 +241,7 @@ console.log("======= 6. includes() =======");
 console.log("======= 7. indexOf() =======");
 
 {
-    let bike = ["Yamaha", "Honda", "Splendor"];
+    let bike = "Yamaha Honda Splendor";
 
     console.log(bike.indexOf("Honda"));
 
@@ -252,9 +252,9 @@ console.log("======= 7. indexOf() =======");
 console.log("======= 8. lastIndexOf() =======");
 
 {
-    let arr = [5, 10, 15, 35];
+    let str = "This is a javascript!";
 
-    console.log(arr.lastIndexOf(35));
+    console.log(str.lastIndexOf("is"));
 }
 
 // 9. repeat()
@@ -323,5 +323,4 @@ console.log("======= 14. valueOf() =======");
     console.log(language.valueOf());
 
 }
-
 
