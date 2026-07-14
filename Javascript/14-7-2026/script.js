@@ -1,3 +1,4 @@
+
 // Javascript object methods
 
 {
@@ -9,6 +10,7 @@
 
     console.log(Employee);
 }
+
 
 {
     let student = new Object({
@@ -159,7 +161,17 @@ console.log("<<<<===== seal() =====>>>>");
 console.log("<<<<===== isSealed() =====>>>>");
 
 {
+    let birds = {
+        fname: "Peacock",
+        sname: "Flamingo",
+        tname: "Sparrow"
+    }
 
+    console.log(Object.isSealed(birds));
+
+    Object.seal(birds);
+
+    console.log(Object.isSealed(birds));
 }
 
 
@@ -178,3 +190,4 @@ console.log("<<<<===== Game Task =====>>>>");
     console.log("Congratulations is the correct Number.");
 
 }
+
