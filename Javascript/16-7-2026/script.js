@@ -32,6 +32,7 @@ console.log("===== floor() =====");
 }
 
 // PI()
+// PI aapse => 3.14 something
 console.log("===== PI() =====");
 
 {
@@ -68,6 +69,7 @@ console.log("===== pow() =====");
 }
 
 // random()
+// random number aapse etl ke otp ne jem kaam karshe alag alag.
 console.log("===== random() =====");
 
 {
@@ -95,6 +97,8 @@ console.log("===== sign() =====");
 }
 
 // sqrt()
+// y2 = x
+
 console.log("===== sqrt() =====");
 
 {
@@ -141,3 +145,60 @@ console.log("===== log() | log2() | log10() =====");
     console.log(num1, num2, num3);
 }
 
+
+// Date Objects methods 
+
+// Date()
+console.log("===== Date() =====");
+
+{
+    let today = new Date()
+
+    console.log(today);
+}
+
+// Date.now()
+// January 1, 1970 aahiya thi je date che aje taya sudhi nu milliseconds ganay che.
+console.log("===== Date.now() =====");
+
+{
+    let miliSecond = Date.now()
+
+    console.log(miliSecond);
+}
+
+// Date.parse()
+console.log("===== Date.parse() =====");
+
+{
+    let todayDate = Date.parse("16-7-2026")
+
+    console.log(todayDate);
+}
+
+// get and set methods 
+console.log("===== get and set methods =====");
+
+{
+    let today = new Date()
+
+    console.log(today);
+
+    // getDate()
+    console.log(today.getDate());
+
+    // getMonth()
+    console.log(today.getMonth());
+
+    // getFullYear()
+    console.log(today.getFullYear());
+
+    // getDay()
+    console.log(today.getDay());
+
+    // setFullYear()
+    // year ne set kare che
+
+    let setyear = today.setFullYear(2007);
+    console.log(today);
+}
