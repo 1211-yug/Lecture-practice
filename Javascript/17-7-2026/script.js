@@ -88,7 +88,7 @@ console.log("<<<==== parseFloat() ====>>>");
 }
 
 // parseInt()
-console.log("<<<==== parseFloat() ====>>>");
+console.log("<<<==== parseInt() ====>>>");
 
 {
     let num = 10.2;
