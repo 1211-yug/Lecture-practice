@@ -40,3 +40,14 @@ const quoteList = {
         }
     ]
 };
+quoteList.totalQuotes = quoteList.quotes.length;
+console.log(quoteList.totalQuotes);
+for (let i = 0; i < quoteList.quotes.length; i++) {
+    const quote = quoteList.quotes[i];
+    console.log(`ID : ${quote.id}`);
+    console.log(`Quote : ${quote.text}`);
+    console.log(`Author : ${quote.author}`);
+}
+quoteList.quotes.forEach((quote, index) => {
+    console.log(`${index + 1}. ${quote.author}`);
+});
