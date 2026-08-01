@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Quiz App</title>
+
+    <!-- icon cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+        integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- CSS link -->
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- header section -->
+        <header class="header">
+            <h1 class="logo">Quiz App</h1>
+            <div class="timer">
+                <i class="fa-regular fa-clock"></i>
+                <span id="timer">Timer: 10:00</span>
+            </div>
+        </header>
+
+        <!-- progress Bar section -->
+        <div class="progress-section">
+            <div class="press-info">
+                <span>Quetion 5 to 10</span>
+                <span>50% Complete</span>
+            </div>
+            <div class="progress-bar">
+                <div class="profress-fill"></div>
+            </div>
+        </div>
+
+        <!-- Questions section -->
+        <div class="question-box">
+            <h2 class="question"> Question </h2>
+        </div>
+
+
+        <!-- Options section -->
+        <div class="options-container">
+            <ul>
+                <li>Answer 1 <input type="radio" name="quiz-option"> <span class="custom-radio"></span></li>
+                <li>Answer 2 <input type="radio" name="quiz-option"> <span class="custom-radio"></span></li>
+                <li>Answer 3 <input type="radio" name="quiz-option"> <span class="custom-radio"></span></li>
+                <li>Answer 4 <input type="radio" name="quiz-option"> <span class="custom-radio"></span></li>
+            </ul>
+        </div>
+
+        <!-- footer section -->
+        <footer class="footer">
+            <button><i class="fa-solid fa-arrow-left-long"></i> Previous</button>
+            <div class="footer-links">
+                <a href="#">Terms</a>
+                <a href="#">Privacy</a>
+                <a href="#">Feedback</a>
+            </div>
+            <button>Next <i class="fa-solid fa-arrow-right-long"></i></button>
+        </footer>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
