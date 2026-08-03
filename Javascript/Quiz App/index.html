@@ -12,6 +12,9 @@
         integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!-- animation cdn link -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- CSS link -->
     <link rel="stylesheet" href="./style.css">
 
@@ -19,58 +22,72 @@
 
 <body>
 
-    <div class="container">
+    <div id="start_page" >
+        <div class="page_title" id="page_Title" data-aos="zoom-in">Javascript Quiz App</div>
+        <button onclick="quiz_start()" class="btn" id="startBtn" data-aos="zoom-in">Quiz Start</button>
+    </div>
+
+
+    <div class="main_content" data-aos="zoom-in">
+        <div class="round" style="left: 280px;"></div>
 
         <!-- header section -->
         <header class="header">
-            <h1 class="logo">Quiz App</h1>
+            <h1 class="logo">Javascript Quiz App</h1>
             <div class="timer">
                 <i class="fa-regular fa-clock"></i>
-                <span id="timer">Timer: 10:00</span>
+                <span id="timer">10:00</span>
             </div>
         </header>
 
-        <!-- progress Bar section -->
-        <div class="progress-section">
-            <div class="press-info">
-                <span>Quetion 5 to 10</span>
-                <span>50% Complete</span>
+        <div class="container">
+
+            <!-- progress Bar section -->
+            <div class="progress-section">
+                <div class="press-info">
+                    <span>Quetion 5 to 10</span>
+                    <span>50% Complete</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                </div>
             </div>
-            <div class="progress-bar">
-                <div class="profress-fill"></div>
+
+            <!-- Questions section -->
+            <div class="question-box">
+                <h2 class="question" id="question"> Question </h2>
             </div>
-        </div>
-
-        <!-- Questions section -->
-        <div class="question-box">
-            <h2 class="question"> Question </h2>
-        </div>
 
 
-        <!-- Options section -->
-        <div class="options-container">
-            <ul>
-                <li>Answer 1 <input type="radio" name="quiz-option"> <span class="custom-radio"></span></li>
-                <li>Answer 2 <input type="radio" name="quiz-option"> <span class="custom-radio"></span></li>
-                <li>Answer 3 <input type="radio" name="quiz-option"> <span class="custom-radio"></span></li>
-                <li>Answer 4 <input type="radio" name="quiz-option"> <span class="custom-radio"></span></li>
-            </ul>
+            <!-- Options section -->
+            <div class="options-container">
+                <ul class="options">
+                    <li>Option 1 <input type="radio" name="quiz-option"> <span class="custom-radio"></span></li>
+                    <li>Option 2 <input type="radio" name="quiz-option"> <span class="custom-radio"></span></li>
+                    <li>Option 3 <input type="radio" name="quiz-option"> <span class="custom-radio"></span></li>
+                    <li>Option 4 <input type="radio" name="quiz-option"> <span class="custom-radio"></span></li>
+                </ul>
+            </div>
+
         </div>
 
         <!-- footer section -->
         <footer class="footer">
-            <button><i class="fa-solid fa-arrow-left-long"></i> Previous</button>
-            <div class="footer-links">
-                <a href="#">Terms</a>
-                <a href="#">Privacy</a>
-                <a href="#">Feedback</a>
+            <div class="footer-container">
+                <button id="previousBtn"><i class="fa-solid fa-arrow-left-long"></i> Previous</button>
+                <button id="nextBtn">Next <i class="fa-solid fa-arrow-right-long"></i></button>
             </div>
-            <button>Next <i class="fa-solid fa-arrow-right-long"></i></button>
         </footer>
+
+        <div class="round r1" style="right: 240px;"></div>
     </div>
 
 
     <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
