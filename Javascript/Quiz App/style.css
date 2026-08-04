@@ -22,8 +22,8 @@ html::-webkit-scrollbar {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: #ffd6d6;
-    background: radial-gradient(circle, rgb(255, 255, 255) 9%, rgb(121, 235, 155) 52%, rgb(190, 71, 71) 72%, rgb(216, 150, 241) 100%);
+    background: #ff8cb3;
+    background: radial-gradient(circle, rgba(255, 140, 179, 1) 0%, rgba(148, 187, 233, 1) 100%);
 }
 
 .page_title {
@@ -84,7 +84,7 @@ html::-webkit-scrollbar {
     gap: 10px;
     background-color: #ede9fe;
     color: #6d28d9;
-    padding: 10px 25px;
+    padding: 10px 20px;
     border-radius: 20px;
     font-weight: 600;
     font-size: 17px;
@@ -200,20 +200,6 @@ html::-webkit-scrollbar {
 .options-container li:hover {
     border: 1px solid #8f6bfc;
     box-shadow: 0 0 5px #a676fa;
-}
-
-.options-container input[type="radio"] {
-    opacity: 0;
-    position: absolute;
-}
-
-.custom-radio {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    border: 2px solid #c4bdf0;
-    display: inline-block;
-    position: relative;
 }
 
 /* footer section */
