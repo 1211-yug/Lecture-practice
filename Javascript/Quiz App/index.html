@@ -28,7 +28,7 @@
     </div>
 
 
-    <div class="main_content" data-aos="zoom-in">
+    <div class="main_content">
         <div class="round" style="left: 280px;"></div>
 
         <!-- header section -->
@@ -45,11 +45,11 @@
             <!-- progress Bar section -->
             <div class="progress-section">
                 <div class="press-info">
-                    <span>Quetion 5 to 10</span>
-                    <span>50% Complete</span>
+                    <span id="questionCount">Question 1 of 10</span>
+                    <span id="progressPercent">10% Complete</span>
                 </div>
                 <div class="progress-bar">
-                    <div class="progress-fill"></div>
+                    <div class="progress-fill" id="progressFill"></div>
                 </div>
             </div>
 
@@ -61,11 +61,7 @@
 
             <!-- Options section -->
             <div class="options-container">
-                <ul class="options">
-                    <li>Option 1 </li>
-                    <li>Option 2 </li>
-                    <li>Option 3 </li>
-                    <li>Option 4 </li>
+                <ul class="options" id="options">
                 </ul>
             </div>
 
@@ -82,9 +78,34 @@
         <div class="round r1" style="right: 240px;"></div>
     </div>
 
+    <div id="score_page">
+        <div class="score_page">
+            <div class="score_title" id="score_Title">Your Score</div>
+            <div class="score_fourbox">
+                <div class="score_borad sr_box">
+                    <span class="sr_label">Total Questions</span>
+                    <span class="sr_value" id="totalQuestions">0</span>
+                </div>
+                <div class="score_correct sr_box">
+                    <span class="sr_label">Correct</span>
+                    <span class="sr_value" id="correctValue">0</span>
+                </div>
+                <div class="score_wrong sr_box">
+                    <span class="sr_label">Wrong</span>
+                    <span class="sr_value" id="wrongValue">0</span>
+                </div>
+                <div class="left_time sr_box">
+                    <span class="sr_label">Time Left</span>
+                    <span class="sr_value" id="timeLeft">00:00</span>
+                </div>
+            </div>
+            <button onclick="restart_quiz()" class="restartBtn" id="restartBtn">Restart</button>
+        </div>
+    </div>
 
-    <script src="script.js"></script>
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
     <script>
         AOS.init();
     </script>
