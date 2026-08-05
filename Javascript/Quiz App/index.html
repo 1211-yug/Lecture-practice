@@ -22,13 +22,16 @@
 
 <body>
 
+    <!-- start section -->
     <div id="start_page">
         <div class="page_title" id="page_Title" data-aos="zoom-in">Javascript Quiz App</div>
         <button onclick="quiz_start()" class="btn" id="startBtn" data-aos="zoom-in">Quiz Start</button>
     </div>
 
 
+    <!-- main section -->
     <div class="main_content">
+
         <div class="round" style="left: 280px;"></div>
 
         <!-- header section -->
@@ -58,11 +61,10 @@
                 <h2 class="question" id="question"> Question </h2>
             </div>
 
-
             <!-- Options section -->
             <div class="options-container">
-                <ul class="options" id="options">
-                </ul>
+                <div class="options" id="options">
+                </div>
             </div>
 
         </div>
@@ -76,10 +78,12 @@
         </footer>
 
         <div class="round r1" style="right: 240px;"></div>
+
     </div>
 
+    <!-- score section -->
     <div id="score_page">
-        <div class="score_page">
+        <div class="score_page" data-aos="zoom-in">
             <div class="score_title" id="score_Title">Your Score</div>
             <div class="score_fourbox">
                 <div class="score_borad sr_box">
@@ -103,9 +107,10 @@
         </div>
     </div>
 
+    <script src="script.js"></script>
+
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="script.js"></script>
     <script>
         AOS.init();
     </script>
