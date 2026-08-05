@@ -253,13 +253,13 @@ html::-webkit-scrollbar {
     pointer-events: none;
 }
 
-.score_fourbox{
+.score_fourbox {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
 }
 
-.sr_box{
+.sr_box {
     width: 200px;
     height: 150px;
     background-color: rgb(238, 237, 237);
@@ -295,13 +295,13 @@ html::-webkit-scrollbar {
     color: #dc2626;
 }
 
-#score_page{
+#score_page {
     display: none;
     background: #ff8cb3;
     background: radial-gradient(circle, rgb(231, 140, 170) 0%, rgb(122, 182, 250) 100%);
 }
 
-.score_page{
+.score_page {
     width: 100%;
     height: 100vh;
     display: flex;
@@ -317,11 +317,12 @@ html::-webkit-scrollbar {
     padding-bottom: 30px;
 }
 
-.restartBtn{
+.restartBtn {
     background: #6b84ff;
     color: white;
     border: 2px solid #1e1b3a;
     border-radius: 10px;
+    margin-top: 20px;
     padding: 12px 20px;
     font-size: clamp(12px, 2vw, 15px);
     font-weight: bold;
