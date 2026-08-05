@@ -209,6 +209,22 @@ html::-webkit-scrollbar {
     font-weight: 600;
 }
 
+.option-letter {
+    display: inline-block;
+    min-width: 26px;
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+    border-radius: 50%;
+    color: #7c3aed;
+    font-weight: 700;
+    margin-right: 10px;
+}
+
+.option-text {
+    flex: 1;
+}
+
 /* footer section */
 
 .footer {
@@ -274,7 +290,7 @@ html::-webkit-scrollbar {
 }
 
 .sr_label {
-    font-size: 14px;
+    font-size: clamp(5px, 5vw, 16px);
     font-weight: 600;
     color: #4b4b4b;
     text-transform: uppercase;
@@ -282,7 +298,7 @@ html::-webkit-scrollbar {
 }
 
 .sr_value {
-    font-size: 32px;
+    font-size: clamp(14px, 5vw, 19px);
     font-weight: 700;
     color: #18007a;
 }
@@ -335,6 +351,27 @@ html::-webkit-scrollbar {
     background-color: #1e1b3a;
 }
 
+.homeBtn {
+    margin-top: 15px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    background: #18007a;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.homeBtn:hover {
+    background: #3d2cc7;
+}
+
+.homeBtn i {
+    margin-right: 8px;
+}
+
 @media (max-width: 576px) {
     .footer {
         display: flex;
@@ -344,6 +381,24 @@ html::-webkit-scrollbar {
 
     .round {
         display: none;
+    }
+    
+    .sr_box {
+        width: 130px;
+        height: 100px;
+        background-color: rgb(238, 237, 237);
+        border: 1px solid black;
+        border-radius: 20px;
+        box-shadow: 0 0 10px #3a3939;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    .sr_label{
+        font-size: clamp(5px, 5vw, 12px);
     }
 }
 
