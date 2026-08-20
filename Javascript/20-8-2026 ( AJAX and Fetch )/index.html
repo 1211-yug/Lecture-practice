@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AJAX and Fetch</title>
+    <title>Fetch</title>
     <link rel="stylesheet" href="./style.css">
 
     <!-- animation cdn -->
@@ -14,7 +14,7 @@
 
 <body>
 
-    <h1 class="title">AJAX and Fetch</h1>
+    <h1 class="title">Fetch</h1>
 
     <div class="Api" data-aos="zoom-in">
         <h2 class="maintitle">Dog API</h2>
@@ -32,30 +32,55 @@
         </div>
     </div>
 
+    <hr>
+    <hr>
+
     <div class="Api" data-aos="zoom-in">
         <h2 class="maintitle">Movie API</h2>
-        <p class="para">A dog is a friendly, loyal, four-legged animal that
-            <br> people keep as a pet or helper.
+
+        <p class="para">A great movie title sparks curiosity,<br> shows the genre, and is easy to remember
         </p>
+
         <button class="btn" onclick="getMovie()" data-aos="zoom-in">Get Random movie</button>
+
         <div class="flex">
-            <div class="center" id="movieResult">
-                <div class="movieCard">
-                    <!-- <img src="${random.Poster}" alt="" /> -->
-                    <h2 class="mvtitle">Juminji</h2>
-                    <div class="flex yeartime">
-                        <h3 class="year">Year : 2021</h3>
-                        <h3 class="time">time : 243min</h3>
-                    </div>
-                </div>
-            </div>
-            <div class="center" id="movieResult1">
-            </div>
-            <div class="center" id="movieResult2">
-            </div>
+
+            <div class="center" id="movieResult"> </div>
+
+            <div class="center" id="movieResult1"> </div>
+
+            <div class="center" id="movieResult2"> </div>
+
         </div>
+
     </div>
 
+    <hr>
+    <hr>
+
+    <div class="Api" data-aos="zoom-in">
+
+        <h2 class="maintitle">Corona API</h2>
+    
+        <p class="para">Enter country to get COVID-19 report.</p>
+    
+        <div class="flex1">
+
+            <input type="text" id="country" placeholder="Enter country name">
+        
+            <button class="btn" id="getInfo" onclick="getInfo()">Get Info</button>
+        </div>
+    
+        <h2 id="countryHeader"></h2>
+    
+        <ul>
+            <li id="population"></li>    
+            <li id="totalCases"></li>    
+            <li id="recovered"></li>    
+            <li id="activeCase"></li>    
+            <li id="criticalCase"></li>    
+        </ul>
+    </div>
 
     <script src="script.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
