@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX and Fetch</title>
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- animation cdn -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <h1 class="title">AJAX and Fetch</h1>
+
+    <div class="Api" data-aos="zoom-in">
+        <h2 class="maintitle">Dog API</h2>
+        <p class="para">A dog is a friendly, loyal, four-legged animal that
+            <br> people keep as a pet or helper.
+        </p>
+        <button class="btn" onclick="getDog()">Get Random Dog</button>
+        <div class="flex">
+            <div class="center" id="dogResult">
+            </div>
+            <div class="center" id="dogResult1">
+            </div>
+            <div class="center" id="dogResult2">
+            </div>
+        </div>
+    </div>
+
+    <div class="Api" data-aos="zoom-in">
+        <h2 class="maintitle">Movie API</h2>
+        <p class="para">A dog is a friendly, loyal, four-legged animal that
+            <br> people keep as a pet or helper.
+        </p>
+        <button class="btn" onclick="getMovie()" data-aos="zoom-in">Get Random movie</button>
+        <div class="flex">
+            <div class="center" id="movieResult">
+                <div class="movieCard">
+                    <!-- <img src="${random.Poster}" alt="" /> -->
+                    <h2 class="mvtitle">Juminji</h2>
+                    <div class="flex yeartime">
+                        <h3 class="year">Year : 2021</h3>
+                        <h3 class="time">time : 243min</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="center" id="movieResult1">
+            </div>
+            <div class="center" id="movieResult2">
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
