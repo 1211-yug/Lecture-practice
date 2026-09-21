@@ -1,20 +1,23 @@
-$(".card").hide();
+$("#productForm").on("submit", function (e) {
+    e.preventDefault();
 
-$("#add").click(function (e) {
-    e.perventDefault();
+    var titleData = $("#title").val().trim();
+    var imageData = $("#image").val().trim();
+    var priceData = $("#price").val().trim();
+    var descData = $("#desc").val().trim();
 
-    var titleData = $("#title").val();
-    var imageData = $("#image").val();
-    var priceData = $("#price").val();
-    var descData = $("#desc").val();
+    if (!titleData || !priceData) {
+        alert("Please enter title and price!");
+        return;
+    }
 
     let card = `
-        <div class="card">
-            <img src="${imageData}" alt="${titleData}">
-            <h3>${titleData}</h3>
-            <span>₹ ${priceData}</span>
-            <p>${descData}</p>
-        </div>
+    <div class="card">
+        <img src="${imageData}" alt="${titleData}">
+        <h3>${titleData}</h3>
+        <span>₹ ${priceData}</span>
+        <p>${descData}</p>
+    </div>
     `;
 
     $("#output").append(card);
@@ -24,4 +27,3 @@ $("#add").click(function (e) {
     $("#price").val("");
     $("#desc").val("");
 });
-
