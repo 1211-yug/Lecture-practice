@@ -11,6 +11,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    grid-template-columns: 4 1fr;
     padding: 30px 15px;
     background-image: radial-gradient(circle at 50% 0%, #1e293b 0%, #0f172a 100%);
 }
@@ -97,12 +99,16 @@ form input:focus {
 
 #output {
     width: 100%;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(4, 1fr);
     gap: 15px;
+    margin: 20px;
 }
 
 .card {
+    width: 100%;
     background: #1e293b;
     border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 15px;
